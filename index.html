@@ -96,13 +96,8 @@
       <div class="options-list" id="optionsList"></div>
     </div>
 
-    <div class="options-block" id="addonsBlock" hidden>
-      <h3 class="options-title">أضافات</h3>
-      <div class="addons-list" id="addonsList"></div>
-    </div>
-
     <div class="options-block">
-      <h3 class="options-title">ملاحظات على الطلب</h3>
+      <h3 class="options-title">ملاحظات على هذا الطبق</h3>
       <textarea id="productNote" rows="2" placeholder="مثال: بدون بصل"></textarea>
     </div>
   </div>
@@ -139,7 +134,8 @@
   <div class="checkout-form" id="checkoutForm">
     <h3 class="options-title">الطلب لـ</h3>
     <input type="text" id="custName" placeholder="اسمك" autocomplete="name">
-    <input type="tel" id="custPhone" placeholder="رقم الهاتف" autocomplete="tel">
+    <input type="tel" id="custPhone" placeholder="رقم الهاتف (11 رقم)" autocomplete="tel" inputmode="numeric" maxlength="11" pattern="[0-9]{11}">
+    <span class="field-hint" id="phoneHint" hidden>يرجى إدخال رقم هاتف صحيح مكوّن من 11 رقم</span>
     <input type="text" id="custAddress" placeholder="العنوان مثل رقم المبنى أو الشقة، الشارع، المدينة" autocomplete="street-address">
     <textarea id="custNote" rows="2" placeholder="الرسالة / ملاحظات"></textarea>
   </div>
@@ -148,6 +144,14 @@
     <button class="btn-add full" id="sendOrderBtn">إرسال الطلب عبر واتساب</button>
   </div>
 </section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <p>
+    جميع الحقوق محفوظة لدى
+    <a class="brand-link" href="https://instagram.com/alwathiqservices" target="_blank" rel="noopener">AlwathiqServices</a>
+  </p>
+</footer>
 
 <!-- ===================== TOAST ===================== -->
 <div class="toast" id="toast"></div>

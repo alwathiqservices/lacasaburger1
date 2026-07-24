@@ -10,12 +10,10 @@
      الحالة العامة (State)
      --------------------------------------------------------- */
   let MENU = null;          // بيانات المنيو الكاملة من menu.json
-  let ADDON_LOOKUP = {};    // خريطة سريعة لأسعار الإضافات
   let cart = [];            // عناصر السلة
   let activeCategory = "all";
   let currentProduct = null;   // المنتج المفتوح حالياً داخل الـ Bottom Sheet
   let currentOptionIndex = 0;
-  let currentAddons = {};      // { addonId: true }
   let currentQty = 1;
 
   /* ---------------------------------------------------------
@@ -36,8 +34,6 @@
   const optionsBlock     = el("optionsBlock");
   const optionsTitle     = el("optionsTitle");
   const optionsList      = el("optionsList");
-  const addonsBlock      = el("addonsBlock");
-  const addonsList       = el("addonsList");
   const productNote      = el("productNote");
   const confirmAddBtn    = el("confirmAddBtn");
   const confirmAddPrice  = el("confirmAddPrice");
@@ -50,6 +46,7 @@
   const cartTotalValue   = el("cartTotalValue");
   const custName         = el("custName");
   const custPhone        = el("custPhone");
+  const phoneHint        = el("phoneHint");
   const custAddress      = el("custAddress");
   const custNote         = el("custNote");
   const sendOrderBtn     = el("sendOrderBtn");
@@ -77,6 +74,10 @@
 
   function uid(){ return "it_" + Math.random().toString(36).slice(2,10) + Date.now().toString(36); }
 
+  function isValidPhone(v){
+    return /^[0-9]{11}$/.test((v||"").trim());
+  }
+
   function saveCart(){
     try{ localStorage.setItem(CONFIG.STORAGE_KEY, JSON.stringify(cart)); }catch(e){ /* ignore quota errors */ }
   }
@@ -93,11 +94,6 @@
   async function loadMenu(){
     const res = await fetch("menu.json", { cache: "no-store" });
     MENU = await res.json();
-
-    // خريطة الإضافات لسهولة الوصول للسعر بالاسم
-    Object.values(MENU.addonGroups || {}).forEach(group=>{
-      group.items.forEach(a=> ADDON_LOOKUP[a.id] = a);
-    });
 
     applyRestaurantInfo();
     renderCategories();
@@ -304,7 +300,7 @@
     if(!line){
       if(delta <= 0) return;
       line = { id: uid(), productId: p.id, name: p.name, image: p.image, customizable:false,
-                optionLabel: null, addons: [], qty: 0, unitPrice: p.price, note: "" };
+                optionLabel: null, qty: 0, unitPrice: p.price, note: "" };
       cart.push(line);
     }
     line.qty += delta;
@@ -320,7 +316,6 @@
   function openProductSheet(p){
     currentProduct = p;
     currentOptionIndex = 0;
-    currentAddons = {};
     currentQty = 1;
 
     productSheetTitle.textContent = p.name;
@@ -354,32 +349,6 @@
       optionsBlock.hidden = true;
     }
 
-    // الإضافات (Checkbox)
-    if(p.addonGroup && MENU.addonGroups[p.addonGroup]){
-      addonsBlock.hidden = false;
-      addonsList.innerHTML = "";
-      MENU.addonGroups[p.addonGroup].items.forEach(addon=>{
-        const row = document.createElement("div");
-        row.className = "addon-row";
-        row.dataset.id = addon.id;
-        row.innerHTML = `
-          <span class="addon-price">+${fmtPrice(addon.price)}</span>
-          <span class="addon-label">${addon.name}</span>
-          <span class="checkbox">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12l6 6L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-        `;
-        row.addEventListener("click", ()=>{
-          const checked = row.classList.toggle("checked");
-          if(checked) currentAddons[addon.id] = true; else delete currentAddons[addon.id];
-          updateSheetPrice();
-        });
-        addonsList.appendChild(row);
-      });
-    } else {
-      addonsBlock.hidden = true;
-    }
-
     qtyValue.textContent = "1";
     updateSheetPrice();
     openSheet(productSheet);
@@ -387,11 +356,7 @@
 
   function computeUnitPrice(){
     const p = currentProduct;
-    let base = p.customizable ? p.options[currentOptionIndex].price : p.price;
-    Object.keys(currentAddons).forEach(id=>{
-      if(ADDON_LOOKUP[id]) base += ADDON_LOOKUP[id].price;
-    });
-    return base;
+    return p.customizable ? p.options[currentOptionIndex].price : p.price;
   }
 
   function updateSheetPrice(){
@@ -414,7 +379,6 @@
   confirmAddBtn.addEventListener("click", ()=>{
     const p = currentProduct;
     const unit = computeUnitPrice();
-    const addonNames = Object.keys(currentAddons).map(id=> ADDON_LOOKUP[id] ? ADDON_LOOKUP[id].name : null).filter(Boolean);
 
     cart.push({
       id: uid(),
@@ -423,7 +387,6 @@
       image: p.image,
       customizable: true,
       optionLabel: p.customizable ? p.options[currentOptionIndex].label : null,
-      addons: addonNames,
       qty: currentQty,
       unitPrice: unit,
       note: productNote.value.trim()
@@ -473,7 +436,6 @@
       row.className = "cart-item";
       const metaParts = [];
       if(item.optionLabel) metaParts.push(item.optionLabel);
-      if(item.addons && item.addons.length) metaParts.push("إضافات: " + item.addons.join("، "));
       if(item.note) metaParts.push("ملاحظة: " + item.note);
 
       row.innerHTML = `
@@ -532,59 +494,34 @@
      إرسال الطلب عبر واتساب
      --------------------------------------------------------- */
   function buildWhatsAppMessage(){
+    const r = MENU.restaurant;
     const lines = [];
-    lines.push("🛒 طلب جديد");
+
+    lines.push(`مرحباً 👋 أرغب بطلب التالي من ${r.name}:`);
     lines.push("");
-    lines.push("الاسم:");
-    lines.push(custName.value.trim() || "-");
-    lines.push("");
-    lines.push("الهاتف:");
-    lines.push(custPhone.value.trim() || "-");
-    lines.push("");
-    lines.push("العنوان:");
-    lines.push(custAddress.value.trim() || "-");
-    lines.push("");
-    lines.push("——————————————");
 
     cart.forEach((item, i)=>{
-      lines.push("");
-      lines.push(`${i+1}-`);
-      lines.push("");
-      lines.push(item.name);
-      if(item.optionLabel){
-        lines.push("");
-        lines.push("النوع:");
-        lines.push(item.optionLabel);
-      }
-      if(item.addons && item.addons.length){
-        lines.push("");
-        lines.push("الإضافات:");
-        lines.push(item.addons.join("، "));
-      }
-      lines.push("");
-      lines.push("الكمية:");
-      lines.push(String(item.qty));
-      if(item.note){
-        lines.push("");
-        lines.push("ملاحظة:");
-        lines.push(item.note);
-      }
-      lines.push("");
-      lines.push("السعر:");
-      lines.push(String(item.unitPrice * item.qty));
-      lines.push("");
-      lines.push("——————————————");
+      const parts = [`${i+1}) ${item.name}`];
+      if(item.optionLabel) parts.push(`(${item.optionLabel})`);
+      parts.push(`× ${item.qty}`);
+      parts.push(`— ${fmtPrice(item.unitPrice * item.qty)}`);
+      lines.push(parts.join(" "));
+      if(item.note) lines.push(`   ملاحظة: ${item.note}`);
     });
 
     lines.push("");
-    lines.push("المجموع:");
-    lines.push(`${cartTotal().toLocaleString("en-US")} ${CONFIG.CURRENCY}`);
+    lines.push(`المجموع: ${fmtPrice(cartTotal())}`);
+    lines.push("");
+    lines.push(`الاسم: ${custName.value.trim()}`);
+    lines.push(`الهاتف: ${custPhone.value.trim()}`);
+    lines.push(`العنوان: ${custAddress.value.trim()}`);
 
     if(custNote.value.trim()){
-      lines.push("");
-      lines.push("الملاحظات:");
-      lines.push(custNote.value.trim());
+      lines.push(`ملاحظات: ${custNote.value.trim()}`);
     }
+
+    lines.push("");
+    lines.push("شكراً لكم 🌹");
 
     return lines.join("\n");
   }
@@ -598,6 +535,13 @@
       showToast("يرجى تعبئة الاسم ورقم الهاتف والعنوان");
       return;
     }
+    if(!isValidPhone(custPhone.value)){
+      phoneHint.hidden = false;
+      custPhone.focus();
+      showToast("رقم الهاتف يجب أن يتكون من 11 رقم");
+      return;
+    }
+    phoneHint.hidden = true;
 
     const msg = buildWhatsAppMessage();
     const url = `https://wa.me/${CONFIG.WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
@@ -637,6 +581,14 @@
   el("productSheetClose").addEventListener("click", ()=> closeSheet(productSheet));
   el("cartSheetClose").addEventListener("click", ()=> closeSheet(cartSheet));
   overlay.addEventListener("click", closeAllSheets);
+
+  /* ---------------------------------------------------------
+     تحقق رقم الهاتف (أرقام فقط، 11 رقم بالضبط)
+     --------------------------------------------------------- */
+  custPhone.addEventListener("input", ()=>{
+    custPhone.value = custPhone.value.replace(/[^0-9]/g, "").slice(0, 11);
+    if(!phoneHint.hidden) phoneHint.hidden = true;
+  });
 
   /* ---------------------------------------------------------
      البحث
