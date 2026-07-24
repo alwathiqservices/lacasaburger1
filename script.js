@@ -230,12 +230,9 @@
 
     card.innerHTML = `
       <div class="product-image">
-        <img src="${p.image}" alt="${p.name}" loading="lazy" width="108" height="108">
+        <img src="${p.image}" alt="${p.name}" loading="lazy" width="140" height="140">
       </div>
       <div class="product-info">
-        <p class="product-name">${p.name}</p>
-        ${p.customizable ? `<p class="product-desc"><span class="customizable-tag">قابل للتخصيص</span></p>` : ``}
-        <p class="product-price">${priceLabel}</p>
         <div class="product-actions">
           <button class="btn-pill-add" type="button" aria-label="إضافة ${p.name}">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
@@ -247,6 +244,9 @@
             <button class="dec" aria-label="إنقاص">−</button>
           </div>
         </div>
+        ${p.customizable ? `<p class="customizable-tag">قابل للتخصيص</p>` : ``}
+        <p class="product-name">${p.name}</p>
+        <p class="product-price">${priceLabel}</p>
       </div>
     `;
 
