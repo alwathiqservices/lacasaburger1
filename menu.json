@@ -1,0 +1,175 @@
+{
+  "restaurant": {
+    "name": "لاكاسا برجر",
+    "tagline": "LACASA BURGER",
+    "address": "الانبار - الفلوجة - شارع الثرثار",
+    "hours": "من ال10 صباحاً الى 3 ليلاً",
+    "phone": "9647811100884",
+    "phone2": "07509088808",
+    "facebook": "Lacasa Burger",
+    "instagram": "lacasa_burger1",
+    "logo": "assets/images/logo.jpg",
+    "cover": "assets/images/hero-bg.jpg"
+  },
+
+  "categories": [
+    { "id": "all", "name": "جميع الفئات" },
+    { "id": "pizza", "name": "بيتزا" },
+    { "id": "burger", "name": "برجر" },
+    { "id": "rizo", "name": "ريزو" },
+    { "id": "saj", "name": "صاج" },
+    { "id": "western", "name": "غربي" },
+    { "id": "kentucky", "name": "كنتاكي" },
+    { "id": "appetizers", "name": "مقبلات حاره" },
+    { "id": "fries", "name": "الفنكر" },
+    { "id": "diet", "name": "اطباق الدايت" },
+    { "id": "drinks", "name": "المشروبات" }
+  ],
+
+  "addonGroups": {
+    "burgerAddons": {
+      "title": "أضافات",
+      "items": [
+        { "id": "add-burger-piece", "name": "قطعة برجر", "price": 2000 },
+        { "id": "add-cheese", "name": "جبن", "price": 500 },
+        { "id": "add-jalapeno", "name": "هلبينو", "price": 500 },
+        { "id": "add-lanchon", "name": "لانشون", "price": 500 },
+        { "id": "add-mushroom", "name": "مشروم", "price": 500 },
+        { "id": "add-ketchup-cup", "name": "كب صوص", "price": 500 },
+        { "id": "add-turkey", "name": "حبش", "price": 500 }
+      ]
+    }
+  },
+
+  "products": [
+    { "id": "pizza-lahm", "category": "pizza", "group": "الايطالي", "name": "بيتزا باللحم", "image": "assets/images/pizza.jpg", "customizable": true,
+      "optionsTitle": "الحجم",
+      "options": [ {"label":"صغير","price":6000}, {"label":"وسط","price":8000}, {"label":"كبير","price":13000} ],
+      "addonGroup": "burgerAddons" },
+    { "id": "pizza-dajaj", "category": "pizza", "group": "الايطالي", "name": "بيتزا بالدجاج", "image": "assets/images/pizza-dajaj.svg", "customizable": true,
+      "optionsTitle": "الحجم",
+      "options": [ {"label":"صغير","price":5000}, {"label":"وسط","price":7000}, {"label":"كبير","price":12000} ],
+      "addonGroup": "burgerAddons" },
+    { "id": "pizza-margarita", "category": "pizza", "group": "الايطالي", "name": "بيتزا مارغريتا", "image": "assets/images/pizza-margarita.svg", "customizable": true,
+      "optionsTitle": "الحجم",
+      "options": [ {"label":"صغير","price":5000}, {"label":"وسط","price":7000}, {"label":"كبير","price":12000} ],
+      "addonGroup": "burgerAddons" },
+    { "id": "pizza-khodar", "category": "pizza", "group": "الايطالي", "name": "بيتزا خضار", "image": "assets/images/pizza-khodar.svg", "customizable": true,
+      "optionsTitle": "الحجم",
+      "options": [ {"label":"صغير","price":5000}, {"label":"وسط","price":7000}, {"label":"كبير","price":10000} ],
+      "addonGroup": "burgerAddons" },
+    { "id": "pizza-peproni", "category": "pizza", "group": "الايطالي", "name": "بيتزا بيبروني", "image": "assets/images/pizza-peproni.svg", "price": 15000 },
+    { "id": "pizza-lacasa", "category": "pizza", "group": "الايطالي", "name": "بيتزا لاكاسا", "image": "assets/images/pizza-lacasa.svg", "price": 14000 },
+
+    { "id": "burger-classic", "category": "burger", "group": "كلاسك برجر", "name": "كلاسك برجر", "image": "assets/images/burger-classic-lahm.svg", "customizable": true,
+      "optionsTitle": "النوع",
+      "options": [
+        {"label":"كلاسك لحم","price":4000}, {"label":"كلاسك لحم وجبة","price":5500},
+        {"label":"كلاسك دجاج","price":3500}, {"label":"كلاسك دجاج وجبة","price":5000},
+        {"label":"جيز برجر","price":4500}, {"label":"جيز برجر وجبة","price":6000},
+        {"label":"مشروم برجر","price":4500}, {"label":"مشروم برجر وجبة","price":6000},
+        {"label":"مكسيكو برجر","price":4500}, {"label":"مكسيكو برجر وجبة","price":6000}
+      ],
+      "addonGroup": "burgerAddons" },
+
+    { "id": "burger-mosco", "category": "burger", "group": "موسكو برجر", "name": "موسكو برجر", "image": "assets/images/burger.jpg", "customizable": true,
+      "optionsTitle": "النوع",
+      "options": [
+        {"label":"موسكو برجر ساندويش","price":4500}, {"label":"موسكو برجر وجبة","price":6000},
+        {"label":"موسكو برجر دجاج ساندويش","price":3500}, {"label":"موسكو برجر دجاج وجبة","price":5000},
+        {"label":"موسكو جيزي برجر ساندويش","price":5000}, {"label":"موسكو جيزي برجر وجبة","price":6500},
+        {"label":"موسكو مشروم برجر ساندويش","price":5000}, {"label":"موسكو مشروم برجر وجبة","price":6500},
+        {"label":"موسكو مكسيكي برجر ساندويش","price":5000}, {"label":"موسكو مكسيكي برجر وجبة","price":6500}
+      ],
+      "addonGroup": "burgerAddons" },
+
+    { "id": "burger-lacasa", "category": "burger", "group": "لاكاسا برجر", "name": "لاكاسا برجر", "image": "assets/images/burger-lacasa.svg", "customizable": true,
+      "optionsTitle": "النوع",
+      "options": [
+        {"label":"لاكاسا برجر ساندويش","price":6500}, {"label":"لاكاسا برجر وجبة","price":8000},
+        {"label":"بروفيسور برجر ساندويش","price":6000}, {"label":"بروفيسور برجر وجبة","price":7500},
+        {"label":"طوكيو برجر وجبة","price":8000},
+        {"label":"اليسون رمان برجر ساندويش","price":5000}, {"label":"اليسون رمان برجر وجبة","price":6500},
+        {"label":"مشروم برجر ساندويش","price":4500}, {"label":"مشروم برجر وجبة","price":6000},
+        {"label":"اناناس برجر ساندويش","price":4500}, {"label":"اناناس برجر وجبة","price":5000},
+        {"label":"دوريتوس برجر ساندويش","price":5000}, {"label":"دوريتوس برجر وجبة","price":6500}
+      ],
+      "addonGroup": "burgerAddons" },
+
+    { "id": "burger-mahshi", "category": "burger", "group": "محشي برجر", "name": "محشي برجر", "image": "assets/images/burger-mahshi.svg", "customizable": true,
+      "optionsTitle": "النوع",
+      "options": [
+        {"label":"بيف برجر ساندويش","price":6000}, {"label":"بيف برجر وجبة","price":7500},
+        {"label":"محشي جبن ساندويش","price":5000}, {"label":"محشي جبن وجبة","price":6500},
+        {"label":"فطر برجر ساندويش","price":5000}, {"label":"فطر برجر وجبة","price":6500}
+      ],
+      "addonGroup": "burgerAddons" },
+
+    { "id": "chicken-crispy", "category": "burger", "group": "مقرمشات دجاج", "name": "مقرمشات دجاج", "image": "assets/images/chicken-crispy.svg", "customizable": true,
+      "optionsTitle": "النوع",
+      "options": [
+        {"label":"زنكر ساندويش","price":4000}, {"label":"زنكر وجبة","price":5500},
+        {"label":"زنكر سوبريم ساندويش","price":4500}, {"label":"زنكر سوبريم وجبة","price":6000},
+        {"label":"فلر ساندويش","price":4000}, {"label":"فلر وجبة","price":5500},
+        {"label":"بوخارست ساندويش","price":5000}, {"label":"بوخارست وجبة","price":6500},
+        {"label":"مطافي ساندويش","price":4000}, {"label":"مطافي وجبة","price":5500},
+        {"label":"طبق كوردن بلو","price":8000}
+      ],
+      "addonGroup": "burgerAddons" },
+
+    { "id": "saj-lahm", "category": "saj", "group": "صاج", "name": "صاج لحم", "image": "assets/images/saj.jpg", "customizable": true,
+      "optionsTitle": "النوع", "options": [ {"label":"ساندويش","price":4000}, {"label":"وجبة","price":5500} ] },
+    { "id": "saj-dajaj", "category": "saj", "group": "صاج", "name": "صاج دجاج", "image": "assets/images/saj.jpg", "customizable": true,
+      "optionsTitle": "النوع", "options": [ {"label":"ساندويش","price":3500}, {"label":"وجبة","price":5000} ] },
+    { "id": "saj-italy", "category": "saj", "group": "صاج", "name": "صاج ايطالي", "image": "assets/images/saj.jpg", "price": 6500 },
+
+    { "id": "rizo-classic", "category": "rizo", "group": "ريزو", "name": "ريزو كلاسك", "image": "assets/images/rizzo.jpg", "price": 5000 },
+    { "id": "rizo-mudakhan", "category": "rizo", "group": "ريزو", "name": "ريزو مدخن", "image": "assets/images/rizzo.jpg", "price": 5500 },
+    { "id": "rizo-ashab", "category": "rizo", "group": "ريزو", "name": "ريزو اعشاب", "image": "assets/images/rizzo.jpg", "price": 6000 },
+    { "id": "rizo-shawarma", "category": "rizo", "group": "ريزو", "name": "ريزو شاورما", "image": "assets/images/rizzo.jpg", "price": 6500 },
+
+    { "id": "western-fahita-lahm", "category": "western", "group": "غربي", "name": "فاهيتا لحم", "image": "assets/images/western-fahita-lahm.svg", "customizable": true,
+      "optionsTitle": "النوع", "options": [ {"label":"ساندويش","price":4000}, {"label":"وجبة","price":5500} ] },
+    { "id": "western-fahita-dajaj", "category": "western", "group": "غربي", "name": "فاهيتا دجاج", "image": "assets/images/western-fahita-dajaj.svg", "customizable": true,
+      "optionsTitle": "النوع", "options": [ {"label":"ساندويش","price":3500}, {"label":"وجبة","price":5000} ] },
+    { "id": "western-mexican", "category": "western", "group": "غربي", "name": "مكسيكي لحم", "image": "assets/images/western-mexican.svg", "customizable": true,
+      "optionsTitle": "النوع", "options": [ {"label":"ساندويش","price":4500}, {"label":"وجبة","price":6000} ] },
+    { "id": "western-hotdog", "category": "western", "group": "غربي", "name": "هوت دوغ", "image": "assets/images/western-hotdog.svg", "customizable": true,
+      "optionsTitle": "النوع", "options": [ {"label":"ساندويش","price":3000}, {"label":"وجبة","price":4500} ] },
+    { "id": "western-hotdog-frank", "category": "western", "group": "غربي", "name": "هوت دوغ فرانكفورت", "image": "assets/images/western-hotdog-frank.svg", "customizable": true,
+      "optionsTitle": "النوع", "options": [ {"label":"ساندويش","price":3500}, {"label":"وجبة","price":5000} ] },
+
+    { "id": "kentucky-3", "category": "kentucky", "group": "كنتاكي", "name": "كنتاكي 3 قطع", "image": "assets/images/kentucky-pieces.svg", "price": 7000 },
+    { "id": "kentucky-6", "category": "kentucky", "group": "كنتاكي", "name": "كنتاكي 6 قطع", "image": "assets/images/kentucky-pieces.svg", "price": 12000 },
+    { "id": "kentucky-9", "category": "kentucky", "group": "كنتاكي", "name": "كنتاكي 9 قطع", "image": "assets/images/kentucky-pieces.svg", "price": 17000 },
+    { "id": "kentucky-12", "category": "kentucky", "group": "كنتاكي", "name": "كنتاكي 12 قطع", "image": "assets/images/kentucky-pieces.svg", "price": 22000 },
+    { "id": "kentucky-15", "category": "kentucky", "group": "كنتاكي", "name": "كنتاكي 15 قطع", "image": "assets/images/kentucky-pieces.svg", "price": 27000 },
+    { "id": "kentucky-strips-5", "category": "kentucky", "group": "كنتاكي", "name": "سترببس 5 قطع", "image": "assets/images/kentucky-strips.svg", "price": 7000 },
+    { "id": "kentucky-strips-7", "category": "kentucky", "group": "كنتاكي", "name": "سترببس 7 قطع", "image": "assets/images/kentucky-strips.svg", "price": 10000 },
+
+    { "id": "appetizer-buffalo", "category": "appetizers", "group": "مقبلات حاره", "name": "اجنحة بافلو", "image": "assets/images/appetizer-buffalo.svg", "price": 6000 },
+    { "id": "appetizer-onion", "category": "appetizers", "group": "مقبلات حاره", "name": "حلقات بصل", "image": "assets/images/appetizer-onion.svg", "price": 2000 },
+    { "id": "appetizer-onion-cheese", "category": "appetizers", "group": "مقبلات حاره", "name": "حلقات بصل بل جبن", "image": "assets/images/appetizer-onion-cheese.svg", "price": 2500 },
+    { "id": "appetizer-nuggets", "category": "appetizers", "group": "مقبلات حاره", "name": "ناجوز", "image": "assets/images/appetizer-nuggets.svg", "price": 6000 },
+    { "id": "appetizer-potato-wedges", "category": "appetizers", "group": "مقبلات حاره", "name": "بطاطا وجز", "image": "assets/images/appetizer-potato-wedges.svg", "price": 2000 },
+    { "id": "appetizer-cheese-sticks", "category": "appetizers", "group": "مقبلات حاره", "name": "اصابع جبن", "image": "assets/images/appetizer-cheese-sticks.svg", "price": 4000 },
+
+    { "id": "fries-small", "category": "fries", "group": "الفنكر", "name": "فرايز صغير", "image": "assets/images/fries-small.svg", "customizable": true,
+      "optionsTitle": "النوع", "options": [ {"label":"عادي","price":1000}, {"label":"جبن","price":1500}, {"label":"صوص","price":1500} ] },
+    { "id": "fries-large", "category": "fries", "group": "الفنكر", "name": "فرايز كبير", "image": "assets/images/fries-large.svg", "customizable": true,
+      "optionsTitle": "النوع", "options": [ {"label":"عادي","price":2000}, {"label":"جبن","price":2500}, {"label":"صوص","price":2500} ] },
+    { "id": "fries-mushroom", "category": "fries", "group": "الفنكر", "name": "فرايز مشروم", "image": "assets/images/fries-mushroom.svg", "price": 3000 },
+    { "id": "fries-jalapeno", "category": "fries", "group": "الفنكر", "name": "فرايز هلبينو", "image": "assets/images/fries-jalapeno.svg", "price": 3000 },
+    { "id": "fries-lahm", "category": "fries", "group": "الفنكر", "name": "فرايز لحم", "image": "assets/images/fries-lahm.svg", "price": 3000 },
+    { "id": "fries-lacasa", "category": "fries", "group": "الفنكر", "name": "لاكاسا فرايز", "image": "assets/images/fries-lacasa.svg", "price": 5000 },
+
+    { "id": "diet-fahita", "category": "diet", "group": "اطباق الدايت", "name": "فاهيتا دجاج دايت", "image": "assets/images/diet-fahita.svg", "price": 6000 },
+    { "id": "diet-fladifia", "category": "diet", "group": "اطباق الدايت", "name": "فلاديفيا لحم دايت", "image": "assets/images/diet-fladifia.svg", "price": 8000 },
+    { "id": "diet-burger-lahm", "category": "diet", "group": "اطباق الدايت", "name": "بركر لحم دايت", "image": "assets/images/diet-burger-lahm.svg", "price": 6000 },
+    { "id": "diet-burger-dajaj", "category": "diet", "group": "اطباق الدايت", "name": "بركر دجاج دايت", "image": "assets/images/diet-burger-dajaj.svg", "price": 5000 },
+
+    { "id": "drink-soda", "category": "drinks", "group": "المشروبات", "name": "مشروب غازي", "image": "assets/images/drink-soda.svg", "price": 500 },
+    { "id": "drink-pepsi", "category": "drinks", "group": "المشروبات", "name": "بيبسي مشين", "image": "assets/images/drink-pepsi.svg", "price": 1000 },
+    { "id": "drink-juice", "category": "drinks", "group": "المشروبات", "name": "عصير اطفال", "image": "assets/images/drink-juice.svg", "price": 250 }
+  ]
+}

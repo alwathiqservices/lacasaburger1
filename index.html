@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>لاكاسا برجر | المنيو الرسمي</title>
+<meta name="description" content="لاكاسا برجر - الفلوجة، شارع الثرثار. اطلب بيتزا، برجر، صاج، ريزو وأكثر عبر الواتساب مباشرة.">
+<meta name="theme-color" content="#b30000">
+<link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="header" id="top">
+  <div class="cover" id="coverImg" role="img" aria-label="غلاف المطعم"></div>
+  <div class="header-card">
+    <div class="logo-wrap">
+      <img id="logoImg" src="assets/images/logo.svg" alt="شعار لاكاسا برجر" class="logo" width="96" height="96">
+    </div>
+    <h1 class="rest-name" id="restName">لاكاسا برجر</h1>
+    <p class="rest-address" id="restAddress">الانبار - الفلوجة - شارع الثرثار</p>
+
+    <div class="rest-meta">
+      <span class="hours-pill" id="restHours">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        <span>من ال10 صباحاً الى 3 ليلاً</span>
+      </span>
+    </div>
+
+    <div class="action-pills">
+      <a class="pill pill-call" id="callBtn" href="tel:">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3h3l2 5-2 1a11 11 0 0 0 6 6l1-2 5 2v3a2 2 0 0 1-2 2C10.5 20 4 13.5 4 5a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.5"/></svg>
+        <span id="phoneText">964+7811100884</span>
+      </a>
+      <a class="pill pill-map" id="mapBtn" href="#" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="9.5" r="2.3" stroke="currentColor" stroke-width="1.5"/></svg>
+        <span>لاكاسا برجر</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== SEARCH ===================== -->
+<div class="search-wrap">
+  <div class="search-box">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="m20 20-3.2-3.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    <input type="search" id="searchInput" placeholder="ابحث عن طبقك المفضل..." aria-label="بحث في المنيو">
+  </div>
+</div>
+
+<!-- ===================== CATEGORIES ===================== -->
+<nav class="categories" id="categories" aria-label="تصنيفات المنيو">
+  <!-- تُبنى ديناميكياً من menu.json -->
+</nav>
+
+<!-- ===================== PRODUCTS ===================== -->
+<main class="menu-sections" id="menuSections">
+  <!-- تُبنى ديناميكياً من menu.json -->
+</main>
+
+<div class="empty-state" id="emptyState" hidden>
+  <p>لا توجد نتائج مطابقة لبحثك 🔎</p>
+</div>
+
+<!-- ===================== FLOATING CART BUTTON ===================== -->
+<button class="cart-fab" id="cartFab" aria-label="فتح السلة" hidden>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.8h7.6a2 2 0 0 0 2-1.6L21 8H6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="20" r="1.4" fill="currentColor"/><circle cx="18" cy="20" r="1.4" fill="currentColor"/></svg>
+  <span class="cart-fab-count" id="cartFabCount">0</span>
+  <span class="cart-fab-total" id="cartFabTotal">0 د.ع</span>
+</button>
+
+<!-- ===================== OVERLAY ===================== -->
+<div class="overlay" id="overlay"></div>
+
+<!-- ===================== PRODUCT BOTTOM SHEET ===================== -->
+<section class="sheet" id="productSheet" role="dialog" aria-modal="true" aria-labelledby="productSheetTitle">
+  <div class="sheet-handle"></div>
+  <div class="sheet-header">
+    <button class="icon-btn close-btn" id="productSheetClose" aria-label="إغلاق">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <h2 id="productSheetTitle">اسم المنتج</h2>
+  </div>
+
+  <div class="sheet-body" id="productSheetBody">
+    <div class="sheet-product-image">
+      <img id="productSheetImg" src="" alt="">
+    </div>
+
+    <div class="options-block" id="optionsBlock" hidden>
+      <h3 class="options-title" id="optionsTitle">الحجم</h3>
+      <div class="options-list" id="optionsList"></div>
+    </div>
+
+    <div class="options-block" id="addonsBlock" hidden>
+      <h3 class="options-title">أضافات</h3>
+      <div class="addons-list" id="addonsList"></div>
+    </div>
+
+    <div class="options-block">
+      <h3 class="options-title">ملاحظات على الطلب</h3>
+      <textarea id="productNote" rows="2" placeholder="مثال: بدون بصل"></textarea>
+    </div>
+  </div>
+
+  <div class="sheet-footer">
+    <button class="btn-add" id="confirmAddBtn">إضافة <span id="confirmAddPrice">0 د.ع</span></button>
+    <div class="qty-stepper">
+      <button class="qty-btn" id="qtyPlus" aria-label="زيادة الكمية">+</button>
+      <span class="qty-value" id="qtyValue">1</span>
+      <button class="qty-btn" id="qtyMinus" aria-label="إنقاص الكمية">−</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CART BOTTOM SHEET ===================== -->
+<section class="sheet sheet-tall" id="cartSheet" role="dialog" aria-modal="true" aria-labelledby="cartSheetTitle">
+  <div class="sheet-handle"></div>
+  <div class="sheet-header">
+    <button class="icon-btn close-btn" id="cartSheetClose" aria-label="إغلاق">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <h2 id="cartSheetTitle">السلة</h2>
+  </div>
+
+  <div class="sheet-body" id="cartItems">
+    <!-- عناصر السلة -->
+  </div>
+
+  <div class="cart-total-row">
+    <span>المجموع الإجمالي</span>
+    <span id="cartTotalValue">0 د.ع</span>
+  </div>
+
+  <div class="checkout-form" id="checkoutForm">
+    <h3 class="options-title">الطلب لـ</h3>
+    <input type="text" id="custName" placeholder="اسمك" autocomplete="name">
+    <input type="tel" id="custPhone" placeholder="رقم الهاتف" autocomplete="tel">
+    <input type="text" id="custAddress" placeholder="العنوان مثل رقم المبنى أو الشقة، الشارع، المدينة" autocomplete="street-address">
+    <textarea id="custNote" rows="2" placeholder="الرسالة / ملاحظات"></textarea>
+  </div>
+
+  <div class="sheet-footer single">
+    <button class="btn-add full" id="sendOrderBtn">إرسال الطلب عبر واتساب</button>
+  </div>
+</section>
+
+<!-- ===================== TOAST ===================== -->
+<div class="toast" id="toast"></div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
