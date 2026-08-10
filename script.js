@@ -619,4 +619,13 @@
     updateCartFab();
   });
 
+  /* ---------------------------------------------------------
+     تسجيل الـ Service Worker (اختياري وآمن — لتفعيل PWA فقط)
+     --------------------------------------------------------- */
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("sw.js").catch(() => { /* تجاهل بصمت */ });
+    });
+  }
+
 })();

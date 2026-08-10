@@ -205,7 +205,7 @@ input, textarea{ font-family: inherit; }
 }
 
 .product-card{
-  display:flex; flex-direction: row-reverse;
+  display:flex; flex-direction: row;
   align-items: flex-start;
   gap: 14px;
   margin-top: 16px;
@@ -576,4 +576,24 @@ textarea:focus, .checkout-form input:focus{ border-color: var(--primary); }
   .menu-sections{ max-width: 820px; }
   .products-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   .products-grid .product-card{ margin-top:0; }
+}
+
+/* ==========================================================
+   MOBILE FIXES — منع الـ Zoom عند الكتابة + Header أكثر إحكاماً
+   لا تغيير في الألوان أو الهوية، فقط أحجام وقياسات
+   ========================================================== */
+@media (max-width: 719px){
+  /* iOS Safari يكبّر الشاشة تلقائياً إذا كان حجم خط الحقل أقل من 16px */
+  .search-box input,
+  textarea,
+  .checkout-form input{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px){
+  .hero{ min-height: 360px; padding-top: 40px; }
+  .logo-wrap{ width: 84px; height: 84px; margin-bottom: 10px; }
+  .rest-name{ font-size: 20px; }
+  .rest-address{ font-size: 13px; margin-bottom: 12px; }
 }
