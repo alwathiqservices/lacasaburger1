@@ -59,11 +59,11 @@
   ],
   "products": [
     {
-      "id": "pizza-lahm",
+      "id": "aa",
       "category": "pizza",
       "group": "الايطالي",
       "name": "بيتزا باللحم",
-      "image": "assets/images/pizza-lahm.svg",
+      "image": "assets/images/aa.png",
       "customizable": true,
       "optionsTitle": "الحجم",
       "options": [
@@ -82,11 +82,11 @@
       ]
     },
     {
-      "id": "pizza-dajaj",
+      "id": "aaa",
       "category": "pizza",
       "group": "الايطالي",
       "name": "بيتزا بالدجاج",
-      "image": "assets/images/pizza-dajaj.svg",
+      "image": "assets/images/aaa.png",
       "customizable": true,
       "optionsTitle": "الحجم",
       "options": [
@@ -105,11 +105,11 @@
       ]
     },
     {
-      "id": "pizza-margarita",
+      "id": "aaaa",
       "category": "pizza",
       "group": "الايطالي",
       "name": "بيتزا مارغريتا",
-      "image": "assets/images/pizza-margarita.svg",
+      "image": "assets/images/aaaa.png",
       "customizable": true,
       "optionsTitle": "الحجم",
       "options": [
@@ -128,50 +128,27 @@
       ]
     },
     {
-      "id": "pizza-khodar",
-      "category": "pizza",
-      "group": "الايطالي",
-      "name": "بيتزا خضار",
-      "image": "assets/images/pizza-khodar.svg",
-      "customizable": true,
-      "optionsTitle": "الحجم",
-      "options": [
-        {
-          "label": "صغير",
-          "price": 5000
-        },
-        {
-          "label": "وسط",
-          "price": 7000
-        },
-        {
-          "label": "كبير",
-          "price": 10000
-        }
-      ]
-    },
-    {
-      "id": "pizza-peproni",
+      "id": "aaaaa",
       "category": "pizza",
       "group": "الايطالي",
       "name": "بيتزا بيبروني",
-      "image": "assets/images/pizza-peproni.svg",
+      "image": "assets/images/aaaaa.png",
       "price": 15000
     },
     {
-      "id": "pizza-lacasa",
+      "id": "aaaaaa",
       "category": "pizza",
       "group": "الايطالي",
       "name": "بيتزا لاكاسا",
-      "image": "assets/images/pizza-lacasa.svg",
+      "image": "assets/images/aaaaa.png",
       "price": 14000
     },
     {
-      "id": "burger-classic",
+      "id": "z",
       "category": "burger",
       "group": "كلاسك برجر",
       "name": "كلاسك برجر",
-      "image": "assets/images/burger-classic-lahm.svg",
+      "image": "assets/images/z.png",
       "customizable": true,
       "optionsTitle": "النوع",
       "options": [
@@ -218,11 +195,11 @@
       ]
     },
     {
-      "id": "burger-mosco",
+      "id": "zz",
       "category": "burger",
       "group": "موسكو برجر",
       "name": "موسكو برجر",
-      "image": "assets/images/burger-mosco.svg",
+      "image": "assets/images/zz.png",
       "customizable": true,
       "optionsTitle": "النوع",
       "options": [
@@ -269,11 +246,11 @@
       ]
     },
     {
-      "id": "burger-lacasa",
+      "id": "zzz",
       "category": "burger",
       "group": "لاكاسا برجر",
       "name": "لاكاسا برجر",
-      "image": "assets/images/burger-lacasa.svg",
+      "image": "assets/images/zzz.png",
       "customizable": true,
       "optionsTitle": "النوع",
       "options": [
@@ -332,11 +309,11 @@
       ]
     },
     {
-      "id": "burger-mahshi",
+      "id": "zzzz",
       "category": "burger",
       "group": "محشي برجر",
       "name": "محشي برجر",
-      "image": "assets/images/burger-mahshi.svg",
+      "image": "assets/images/zzzz.png",
       "customizable": true,
       "optionsTitle": "النوع",
       "options": [
@@ -367,11 +344,11 @@
       ]
     },
     {
-      "id": "chicken-crispy",
+      "id": "q",
       "category": "burger",
       "group": "مقرمشات دجاج",
       "name": "مقرمشات دجاج",
-      "image": "assets/images/chicken-crispy.svg",
+      "image": "assets/images/q.png",
       "customizable": true,
       "optionsTitle": "النوع",
       "options": [
@@ -422,11 +399,11 @@
       ]
     },
     {
-      "id": "saj-lahm",
+      "id": "s",
       "category": "saj",
       "group": "صاج",
       "name": "صاج لحم",
-      "image": "assets/images/saj-lahm.svg",
+      "image": "assets/images/s.png",
       "customizable": true,
       "optionsTitle": "النوع",
       "options": [
@@ -441,11 +418,11 @@
       ]
     },
     {
-      "id": "saj-dajaj",
+      "id": "ss",
       "category": "saj",
       "group": "صاج",
       "name": "صاج دجاج",
-      "image": "assets/images/saj-dajaj.svg",
+      "image": "assets/images/ss.png",
       "customizable": true,
       "optionsTitle": "النوع",
       "options": [
@@ -460,51 +437,51 @@
       ]
     },
     {
-      "id": "saj-italy",
+      "id": "sss",
       "category": "saj",
       "group": "صاج",
       "name": "صاج ايطالي",
-      "image": "assets/images/saj-italy.svg",
+      "image": "assets/images/sss.png",
       "price": 6500
     },
     {
-      "id": "rizo-classic",
+      "id": "r",
       "category": "rizo",
       "group": "ريزو",
       "name": "ريزو كلاسك",
-      "image": "assets/images/rizo-classic.svg",
+      "image": "assets/images/r.png",
       "price": 5000
     },
     {
-      "id": "rizo-mudakhan",
+      "id": "rr",
       "category": "rizo",
       "group": "ريزو",
       "name": "ريزو مدخن",
-      "image": "assets/images/rizo-mudakhan.svg",
+      "image": "assets/images/rr.png",
       "price": 5500
     },
     {
-      "id": "rizo-ashab",
+      "id": "rrr",
       "category": "rizo",
       "group": "ريزو",
       "name": "ريزو اعشاب",
-      "image": "assets/images/rizo-ashab.svg",
+      "image": "assets/images/rrr.png",
       "price": 6000
     },
     {
-      "id": "rizo-shawarma",
+      "id": "rrrr",
       "category": "rizo",
       "group": "ريزو",
       "name": "ريزو شاورما",
-      "image": "assets/images/rizo-shawarma.svg",
+      "image": "assets/images/rrrr.png",
       "price": 6500
     },
     {
-      "id": "western-fahita-lahm",
+      "id": "f",
       "category": "western",
       "group": "غربي",
       "name": "فاهيتا لحم",
-      "image": "assets/images/western-fahita-lahm.svg",
+      "image": "assets/images/f.png",
       "customizable": true,
       "optionsTitle": "النوع",
       "options": [
@@ -519,11 +496,11 @@
       ]
     },
     {
-      "id": "western-fahita-dajaj",
+      "id": "ff",
       "category": "western",
       "group": "غربي",
       "name": "فاهيتا دجاج",
-      "image": "assets/images/western-fahita-dajaj.svg",
+      "image": "assets/images/ff.png",
       "customizable": true,
       "optionsTitle": "النوع",
       "options": [
@@ -538,11 +515,11 @@
       ]
     },
     {
-      "id": "western-mexican",
+      "id": "m",
       "category": "western",
       "group": "غربي",
       "name": "مكسيكي لحم",
-      "image": "assets/images/western-mexican.svg",
+      "image": "assets/images/m.png",
       "customizable": true,
       "optionsTitle": "النوع",
       "options": [
@@ -557,11 +534,11 @@
       ]
     },
     {
-      "id": "western-hotdog",
+      "id": "h",
       "category": "western",
       "group": "غربي",
       "name": "هوت دوغ",
-      "image": "assets/images/western-hotdog.svg",
+      "image": "assets/images/h.png",
       "customizable": true,
       "optionsTitle": "النوع",
       "options": [
@@ -576,11 +553,11 @@
       ]
     },
     {
-      "id": "western-hotdog-frank",
+      "id": "hh",
       "category": "western",
       "group": "غربي",
       "name": "هوت دوغ فرانكفورت",
-      "image": "assets/images/western-hotdog-frank.svg",
+      "image": "assets/images/hh.png",
       "customizable": true,
       "optionsTitle": "النوع",
       "options": [
@@ -595,115 +572,107 @@
       ]
     },
     {
-      "id": "kentucky-3",
+      "id": "k",
       "category": "kentucky",
       "group": "كنتاكي",
       "name": "كنتاكي 3 قطع",
-      "image": "assets/images/kentucky-pieces.svg",
+      "image": "assets/images/k.png",
       "price": 7000
     },
     {
-      "id": "kentucky-6",
+      "id": "kk",
       "category": "kentucky",
       "group": "كنتاكي",
       "name": "كنتاكي 6 قطع",
-      "image": "assets/images/kentucky-pieces.svg",
+      "image": "assets/images/kk.png",
       "price": 12000
     },
     {
-      "id": "kentucky-9",
+      "id": "kkk",
       "category": "kentucky",
       "group": "كنتاكي",
       "name": "كنتاكي 9 قطع",
-      "image": "assets/images/kentucky-pieces.svg",
+      "image": "assets/images/kkk.png",
       "price": 17000
     },
     {
-      "id": "kentucky-12",
+      "id": "kkkk",
       "category": "kentucky",
       "group": "كنتاكي",
       "name": "كنتاكي 12 قطع",
-      "image": "assets/images/kentucky-pieces.svg",
+      "image": "assets/images/kkkk.png",
       "price": 22000
     },
     {
-      "id": "kentucky-15",
+      "id": "kkkkk",
       "category": "kentucky",
       "group": "كنتاكي",
       "name": "كنتاكي 15 قطع",
-      "image": "assets/images/kentucky-pieces.svg",
+      "image": "assets/images/kkkkk.png",
       "price": 27000
     },
     {
-      "id": "kentucky-strips-5",
+      "id": "n",
       "category": "kentucky",
       "group": "كنتاكي",
       "name": "سترببس 5 قطع",
-      "image": "assets/images/kentucky-strips.svg",
+      "image": "assets/images/n.png",
       "price": 7000
     },
     {
-      "id": "kentucky-strips-7",
+      "id": "nn",
       "category": "kentucky",
       "group": "كنتاكي",
       "name": "سترببس 7 قطع",
-      "image": "assets/images/kentucky-strips.svg",
+      "image": "assets/images/nn.png",
       "price": 10000
     },
     {
-      "id": "appetizer-buffalo",
+      "id": "j",
       "category": "appetizers",
       "group": "مقبلات حاره",
       "name": "اجنحة بافلو",
-      "image": "assets/images/appetizer-buffalo.svg",
+      "image": "assets/images/j.png",
       "price": 6000
     },
     {
-      "id": "appetizer-onion",
+      "id": "y",
       "category": "appetizers",
       "group": "مقبلات حاره",
       "name": "حلقات بصل",
-      "image": "assets/images/appetizer-onion.svg",
+      "image": "assets/images/y.png",
       "price": 2000
     },
     {
-      "id": "appetizer-onion-cheese",
+      "id": "yy",
       "category": "appetizers",
       "group": "مقبلات حاره",
       "name": "حلقات بصل بل جبن",
-      "image": "assets/images/appetizer-onion-cheese.svg",
+      "image": "assets/images/yy.png",
       "price": 2500
     },
     {
-      "id": "appetizer-nuggets",
-      "category": "appetizers",
-      "group": "مقبلات حاره",
-      "name": "ناجوز",
-      "image": "assets/images/appetizer-nuggets.svg",
-      "price": 6000
-    },
-    {
-      "id": "appetizer-potato-wedges",
+      "id": "2",
       "category": "appetizers",
       "group": "مقبلات حاره",
       "name": "بطاطا وجز",
-      "image": "assets/images/appetizer-potato-wedges.svg",
+      "image": "assets/images/2.png",
       "price": 2000
     },
     {
-      "id": "appetizer-cheese-sticks",
+      "id": "3",
       "category": "appetizers",
       "group": "مقبلات حاره",
       "name": "اصابع جبن",
-      "image": "assets/images/appetizer-cheese-sticks.svg",
+      "image": "assets/images/3.png",
       "price": 4000
     },
     {
-      "id": "fries-small",
+      "id": "1",
       "category": "fries",
       "group": "الفنكر",
       "name": "فرايز صغير",
-      "image": "assets/images/fries-small.svg",
+      "image": "assets/images/1.png",
       "customizable": true,
       "optionsTitle": "النوع",
       "options": [
@@ -722,11 +691,11 @@
       ]
     },
     {
-      "id": "fries-large",
+      "id": "1",
       "category": "fries",
       "group": "الفنكر",
       "name": "فرايز كبير",
-      "image": "assets/images/fries-large.svg",
+      "image": "assets/images/1.png",
       "customizable": true,
       "optionsTitle": "النوع",
       "options": [
@@ -745,92 +714,69 @@
       ]
     },
     {
-      "id": "fries-mushroom",
+      "id": "1",
       "category": "fries",
       "group": "الفنكر",
       "name": "فرايز مشروم",
-      "image": "assets/images/fries-mushroom.svg",
+      "image": "assets/images/1.png",
       "price": 3000
     },
     {
-      "id": "fries-jalapeno",
+      "id": "1",
       "category": "fries",
       "group": "الفنكر",
       "name": "فرايز هلبينو",
-      "image": "assets/images/fries-jalapeno.svg",
+      "image": "assets/images/1.png",
       "price": 3000
     },
     {
-      "id": "fries-lahm",
+      "id": "1",
       "category": "fries",
       "group": "الفنكر",
       "name": "فرايز لحم",
-      "image": "assets/images/fries-lahm.svg",
+      "image": "assets/images/1.png",
       "price": 3000
     },
     {
-      "id": "fries-lacasa",
+      "id": "1",
       "category": "fries",
       "group": "الفنكر",
       "name": "لاكاسا فرايز",
-      "image": "assets/images/fries-lacasa.svg",
+      "image": "assets/images/1.png",
       "price": 5000
     },
     {
-      "id": "diet-fahita",
+      "id": "diet",
       "category": "diet",
       "group": "اطباق الدايت",
       "name": "فاهيتا دجاج دايت",
-      "image": "assets/images/diet-fahita.svg",
+      "image": "assets/images/diet.png",
       "price": 6000
     },
     {
-      "id": "diet-fladifia",
+      "id": "diet",
       "category": "diet",
       "group": "اطباق الدايت",
       "name": "فلاديفيا لحم دايت",
-      "image": "assets/images/diet-fladifia.svg",
+      "image": "assets/images/diet.png",
       "price": 8000
     },
     {
-      "id": "diet-burger-lahm",
+      "id": "burger",
       "category": "diet",
       "group": "اطباق الدايت",
       "name": "بركر لحم دايت",
-      "image": "assets/images/diet-burger-lahm.svg",
+      "image": "assets/images/burger.png",
       "price": 6000
     },
     {
-      "id": "diet-burger-dajaj",
+      "id": "burger",
       "category": "diet",
       "group": "اطباق الدايت",
       "name": "بركر دجاج دايت",
-      "image": "assets/images/diet-burger-dajaj.svg",
+      "image": "assets/images/burger.png",
       "price": 5000
-    },
-    {
-      "id": "drink-soda",
-      "category": "drinks",
-      "group": "المشروبات",
-      "name": "مشروب غازي",
-      "image": "assets/images/drink-soda.svg",
-      "price": 500
-    },
-    {
-      "id": "drink-pepsi",
-      "category": "drinks",
-      "group": "المشروبات",
-      "name": "بيبسي مشين",
-      "image": "assets/images/drink-pepsi.svg",
-      "price": 1000
-    },
-    {
-      "id": "drink-juice",
-      "category": "drinks",
-      "group": "المشروبات",
-      "name": "عصير اطفال",
-      "image": "assets/images/drink-juice.svg",
-      "price": 250
-    }
+    }  
+    
   ]
 }
