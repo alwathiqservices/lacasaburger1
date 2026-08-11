@@ -770,6 +770,29 @@
       "price": 6000
     },
     {
+      "id": "o",
+      "category": "drinks",
+      "group": "المشروبات",
+      "name": "مشروب غازي ",
+      "image": "assets/images/o.png",
+      "customizable": true,
+      "optionsTitle": "النوع",
+      "options": [
+        {
+          "label": "بيبسي",
+          "price": 500
+        },
+        {
+          "label": "سفن",
+          "price": 500
+        },
+        {
+          "label": "ميرندا برتقال",
+          "price": 500
+        }
+      ]
+    },
+    {
       "id": "burger",
       "category": "diet",
       "group": "اطباق الدايت",
