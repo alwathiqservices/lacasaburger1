@@ -442,7 +442,18 @@
       "group": "صاج",
       "name": "صاج ايطالي",
       "image": "assets/images/sss.png",
-      "price": 6500
+      "customizable": true,
+      "optionsTitle": "النوع",
+      "options": [
+        {
+          "label": "ايطالي لحم",
+          "price": 6500
+        },
+        {
+          "label": "ايطالي دجاج",
+          "price": 6500
+        }
+      ]
     },
     {
       "id": "r",
