@@ -497,29 +497,29 @@
     const DIVIDER = "____________";
     const lines = [];
 
-    lines.push("طلب جديد 🆕");
+    lines.push("*طلب جديد*");
     lines.push(DIVIDER);
-    lines.push("الطلب :");
+    lines.push("*الطلب* :");
 
     cart.forEach((item)=>{
       const optionPart = item.optionLabel ? ` (${item.optionLabel})` : "";
-      lines.push(`▪️ ${item.name}${optionPart} X ${item.qty} — ${fmtPrice(item.unitPrice * item.qty)}`);
-      if(item.note) lines.push(`   📝 ${item.note}`);
+      lines.push(`• ${item.name}${optionPart} X ${item.qty} — ${fmtPrice(item.unitPrice * item.qty)}`);
+      if(item.note) lines.push(`   ملاحظة: ${item.note}`);
     });
 
     lines.push(DIVIDER);
-    lines.push(`المجموع : ${fmtPrice(cartTotal())}`);
+    lines.push(`*المجموع* : ${fmtPrice(cartTotal())}`);
     lines.push(DIVIDER);
     lines.push(`الاسم : ${custName.value.trim()}`);
-    lines.push(`☎️ ${custPhone.value.trim()}`);
-    lines.push(`📌 ${custAddress.value.trim()}`);
+    lines.push(`📞 ${custPhone.value.trim()}`);
+    lines.push(`📍 ${custAddress.value.trim()}`);
 
     if(custNote.value.trim()){
-      lines.push(`📝 ملاحظة : ${custNote.value.trim()}`);
+      lines.push(`ملاحظة : ${custNote.value.trim()}`);
     }
 
     lines.push(DIVIDER);
-    lines.push("شكراً على طلبكم 🩶");
+    lines.push("شكراً على طلبكم 🌹");
 
     return lines.join("\n");
   }
