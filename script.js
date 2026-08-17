@@ -494,34 +494,32 @@
      إرسال الطلب عبر واتساب
      --------------------------------------------------------- */
   function buildWhatsAppMessage(){
-    const r = MENU.restaurant;
+    const DIVIDER = "____________";
     const lines = [];
 
-    lines.push(`مرحباً 👋 أرغب بطلب التالي من ${r.name}:`);
-    lines.push("");
+    lines.push("طلب جديد 🆕");
+    lines.push(DIVIDER);
+    lines.push("الطلب :");
 
-    cart.forEach((item, i)=>{
-      const parts = [`${i+1}) ${item.name}`];
-      if(item.optionLabel) parts.push(`(${item.optionLabel})`);
-      parts.push(`× ${item.qty}`);
-      parts.push(`— ${fmtPrice(item.unitPrice * item.qty)}`);
-      lines.push(parts.join(" "));
-      if(item.note) lines.push(`   ملاحظة: ${item.note}`);
+    cart.forEach((item)=>{
+      const optionPart = item.optionLabel ? ` (${item.optionLabel})` : "";
+      lines.push(`▪️ ${item.name}${optionPart} X ${item.qty} — ${fmtPrice(item.unitPrice * item.qty)}`);
+      if(item.note) lines.push(`   📝 ${item.note}`);
     });
 
-    lines.push("");
-    lines.push(`المجموع: ${fmtPrice(cartTotal())}`);
-    lines.push("");
-    lines.push(`الاسم: ${custName.value.trim()}`);
-    lines.push(`الهاتف: ${custPhone.value.trim()}`);
-    lines.push(`العنوان: ${custAddress.value.trim()}`);
+    lines.push(DIVIDER);
+    lines.push(`المجموع : ${fmtPrice(cartTotal())}`);
+    lines.push(DIVIDER);
+    lines.push(`الاسم : ${custName.value.trim()}`);
+    lines.push(`☎️ ${custPhone.value.trim()}`);
+    lines.push(`📌 ${custAddress.value.trim()}`);
 
     if(custNote.value.trim()){
-      lines.push(`ملاحظات: ${custNote.value.trim()}`);
+      lines.push(`📝 ملاحظة : ${custNote.value.trim()}`);
     }
 
-    lines.push("");
-    lines.push("شكراً لكم 🌹");
+    lines.push(DIVIDER);
+    lines.push("شكراً على طلبكم 🩶");
 
     return lines.join("\n");
   }
