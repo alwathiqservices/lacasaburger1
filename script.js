@@ -543,6 +543,17 @@
 
     const msg = buildWhatsAppMessage();
     const url = `https://wa.me/${CONFIG.WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+
+    // GA4: تسجيل محاولة إرسال طلب حقيقي فقط بعد اجتياز كل عمليات التحقق أعلاه،
+    // وقبل فتح واتساب مباشرة بدون أي تأخير
+    if (typeof gtag === 'function') {
+      gtag('event', 'whatsapp_order', {
+        event_category: 'orders',
+        event_label: 'WhatsApp Order',
+        value: 1
+      });
+    }
+
     window.open(url, "_blank");
 
     // تفريغ السلة بعد الإرسال
