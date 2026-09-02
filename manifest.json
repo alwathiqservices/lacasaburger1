@@ -1,0 +1,17 @@
+{
+  "name": "لاكاسا برجر — LACASA BURGER",
+  "short_name": "لاكاسا برجر",
+  "description": "منيو لاكاسا برجر الرسمي — الفلوجة، شارع الثرثار",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#141014",
+  "theme_color": "#141014",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    { "src": "assets/images/logo.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/images/logo.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

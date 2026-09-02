@@ -59,7 +59,7 @@
   ],
   "products": [
     {
-      "id": "aa",
+      "id": "pizza-01",
       "category": "pizza",
       "group": "الايطالي",
       "name": "بيتزا باللحم",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": "aaa",
+      "id": "pizza-02",
       "category": "pizza",
       "group": "الايطالي",
       "name": "بيتزا بالدجاج",
@@ -105,7 +105,7 @@
       ]
     },
     {
-      "id": "aaaa",
+      "id": "pizza-03",
       "category": "pizza",
       "group": "الايطالي",
       "name": "بيتزا مارغريتا",
@@ -128,7 +128,7 @@
       ]
     },
     {
-      "id": "aaaaa",
+      "id": "pizza-04",
       "category": "pizza",
       "group": "الايطالي",
       "name": "بيتزا بيبروني",
@@ -136,7 +136,7 @@
       "price": 15000
     },
     {
-      "id": "aaaaaa",
+      "id": "pizza-05",
       "category": "pizza",
       "group": "الايطالي",
       "name": "بيتزا لاكاسا",
@@ -144,7 +144,7 @@
       "price": 14000
     },
     {
-      "id": "z",
+      "id": "burger-01",
       "category": "burger",
       "group": "كلاسك برجر",
       "name": "كلاسك برجر",
@@ -195,7 +195,7 @@
       ]
     },
     {
-      "id": "zz",
+      "id": "burger-02",
       "category": "burger",
       "group": "موسكو برجر",
       "name": "موسكو برجر",
@@ -246,7 +246,7 @@
       ]
     },
     {
-      "id": "zzz",
+      "id": "burger-03",
       "category": "burger",
       "group": "لاكاسا برجر",
       "name": "لاكاسا برجر",
@@ -309,7 +309,7 @@
       ]
     },
     {
-      "id": "zzzz",
+      "id": "burger-04",
       "category": "burger",
       "group": "محشي برجر",
       "name": "محشي برجر",
@@ -344,7 +344,7 @@
       ]
     },
     {
-      "id": "q",
+      "id": "burger-05",
       "category": "burger",
       "group": "مقرمشات دجاج",
       "name": "مقرمشات دجاج",
@@ -399,7 +399,7 @@
       ]
     },
     {
-      "id": "s",
+      "id": "saj-01",
       "category": "saj",
       "group": "صاج",
       "name": "صاج لحم",
@@ -418,7 +418,7 @@
       ]
     },
     {
-      "id": "ss",
+      "id": "saj-02",
       "category": "saj",
       "group": "صاج",
       "name": "صاج دجاج",
@@ -437,7 +437,7 @@
       ]
     },
     {
-      "id": "sss",
+      "id": "saj-03",
       "category": "saj",
       "group": "صاج",
       "name": "صاج ايطالي",
@@ -456,7 +456,7 @@
       ]
     },
     {
-      "id": "r",
+      "id": "rizo-01",
       "category": "rizo",
       "group": "ريزو",
       "name": "ريزو كلاسك",
@@ -464,7 +464,7 @@
       "price": 5000
     },
     {
-      "id": "rr",
+      "id": "rizo-02",
       "category": "rizo",
       "group": "ريزو",
       "name": "ريزو مدخن",
@@ -472,7 +472,7 @@
       "price": 5500
     },
     {
-      "id": "rrr",
+      "id": "rizo-03",
       "category": "rizo",
       "group": "ريزو",
       "name": "ريزو اعشاب",
@@ -480,7 +480,7 @@
       "price": 6000
     },
     {
-      "id": "rrrr",
+      "id": "rizo-04",
       "category": "rizo",
       "group": "ريزو",
       "name": "ريزو شاورما",
@@ -488,7 +488,7 @@
       "price": 6500
     },
     {
-      "id": "f",
+      "id": "western-01",
       "category": "western",
       "group": "غربي",
       "name": "فاهيتا لحم",
@@ -507,7 +507,7 @@
       ]
     },
     {
-      "id": "ff",
+      "id": "western-02",
       "category": "western",
       "group": "غربي",
       "name": "فاهيتا دجاج",
@@ -526,7 +526,7 @@
       ]
     },
     {
-      "id": "m",
+      "id": "western-03",
       "category": "western",
       "group": "غربي",
       "name": "مكسيكي لحم",
@@ -545,7 +545,7 @@
       ]
     },
     {
-      "id": "h",
+      "id": "western-04",
       "category": "western",
       "group": "غربي",
       "name": "هوت دوغ",
@@ -564,7 +564,7 @@
       ]
     },
     {
-      "id": "hh",
+      "id": "western-05",
       "category": "western",
       "group": "غربي",
       "name": "هوت دوغ فرانكفورت",
@@ -583,7 +583,7 @@
       ]
     },
     {
-      "id": "k",
+      "id": "kentucky-01",
       "category": "kentucky",
       "group": "كنتاكي",
       "name": "كنتاكي 3 قطع",
@@ -591,7 +591,7 @@
       "price": 7000
     },
     {
-      "id": "kk",
+      "id": "kentucky-02",
       "category": "kentucky",
       "group": "كنتاكي",
       "name": "كنتاكي 6 قطع",
@@ -599,7 +599,7 @@
       "price": 12000
     },
     {
-      "id": "kkk",
+      "id": "kentucky-03",
       "category": "kentucky",
       "group": "كنتاكي",
       "name": "كنتاكي 9 قطع",
@@ -607,7 +607,7 @@
       "price": 17000
     },
     {
-      "id": "kkkk",
+      "id": "kentucky-04",
       "category": "kentucky",
       "group": "كنتاكي",
       "name": "كنتاكي 12 قطع",
@@ -615,7 +615,7 @@
       "price": 22000
     },
     {
-      "id": "kkkkk",
+      "id": "kentucky-05",
       "category": "kentucky",
       "group": "كنتاكي",
       "name": "كنتاكي 15 قطع",
@@ -623,7 +623,7 @@
       "price": 27000
     },
     {
-      "id": "n",
+      "id": "kentucky-06",
       "category": "kentucky",
       "group": "كنتاكي",
       "name": "سترببس 5 قطع",
@@ -631,7 +631,7 @@
       "price": 7000
     },
     {
-      "id": "nn",
+      "id": "kentucky-07",
       "category": "kentucky",
       "group": "كنتاكي",
       "name": "سترببس 7 قطع",
@@ -639,7 +639,7 @@
       "price": 10000
     },
     {
-      "id": "j",
+      "id": "appetizers-01",
       "category": "appetizers",
       "group": "مقبلات حاره",
       "name": "اجنحة بافلو",
@@ -647,7 +647,7 @@
       "price": 6000
     },
     {
-      "id": "y",
+      "id": "appetizers-02",
       "category": "appetizers",
       "group": "مقبلات حاره",
       "name": "حلقات بصل",
@@ -655,7 +655,7 @@
       "price": 2000
     },
     {
-      "id": "yy",
+      "id": "appetizers-03",
       "category": "appetizers",
       "group": "مقبلات حاره",
       "name": "حلقات بصل بل جبن",
@@ -663,7 +663,7 @@
       "price": 2500
     },
     {
-      "id": "2",
+      "id": "appetizers-04",
       "category": "appetizers",
       "group": "مقبلات حاره",
       "name": "بطاطا وجز",
@@ -671,7 +671,7 @@
       "price": 2000
     },
     {
-      "id": "3",
+      "id": "appetizers-05",
       "category": "appetizers",
       "group": "مقبلات حاره",
       "name": "اصابع جبن",
@@ -679,7 +679,7 @@
       "price": 4000
     },
     {
-      "id": "1",
+      "id": "fries-01",
       "category": "fries",
       "group": "الفنكر",
       "name": "فرايز صغير",
@@ -702,7 +702,7 @@
       ]
     },
     {
-      "id": "1",
+      "id": "fries-02",
       "category": "fries",
       "group": "الفنكر",
       "name": "فرايز كبير",
@@ -725,7 +725,7 @@
       ]
     },
     {
-      "id": "1",
+      "id": "fries-03",
       "category": "fries",
       "group": "الفنكر",
       "name": "فرايز مشروم",
@@ -733,7 +733,7 @@
       "price": 3000
     },
     {
-      "id": "1",
+      "id": "fries-04",
       "category": "fries",
       "group": "الفنكر",
       "name": "فرايز هلبينو",
@@ -741,7 +741,7 @@
       "price": 3000
     },
     {
-      "id": "1",
+      "id": "fries-05",
       "category": "fries",
       "group": "الفنكر",
       "name": "فرايز لحم",
@@ -749,7 +749,7 @@
       "price": 3000
     },
     {
-      "id": "1",
+      "id": "fries-06",
       "category": "fries",
       "group": "الفنكر",
       "name": "لاكاسا فرايز",
@@ -757,7 +757,7 @@
       "price": 5000
     },
     {
-      "id": "diet",
+      "id": "diet-01",
       "category": "diet",
       "group": "اطباق الدايت",
       "name": "فاهيتا دجاج دايت",
@@ -765,7 +765,7 @@
       "price": 6000
     },
     {
-      "id": "diet",
+      "id": "diet-02",
       "category": "diet",
       "group": "اطباق الدايت",
       "name": "فلاديفيا لحم دايت",
@@ -773,7 +773,7 @@
       "price": 8000
     },
     {
-      "id": "burger",
+      "id": "diet-03",
       "category": "diet",
       "group": "اطباق الدايت",
       "name": "بركر لحم دايت",
@@ -781,10 +781,10 @@
       "price": 6000
     },
     {
-      "id": "o",
+      "id": "drinks-01",
       "category": "drinks",
       "group": "المشروبات",
-      "name": "مشروب غازي ",
+      "name": "مشروب غازي",
       "image": "assets/images/o.png",
       "customizable": true,
       "optionsTitle": "النوع",
@@ -804,13 +804,12 @@
       ]
     },
     {
-      "id": "burger",
+      "id": "diet-04",
       "category": "diet",
       "group": "اطباق الدايت",
       "name": "بركر دجاج دايت",
       "image": "assets/images/burger.png",
       "price": 5000
-    }  
-    
+    }
   ]
 }
