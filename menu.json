@@ -131,6 +131,29 @@
       "id": "pizza-04",
       "category": "pizza",
       "group": "الايطالي",
+      "name": "بيتزا خضار",
+      "image": "assets/images/aaaaaa.png",
+      "customizable": true,
+      "optionsTitle": "الحجم",
+      "options": [
+        {
+          "label": "صغير",
+          "price": 5000
+        },
+        {
+          "label": "وسط",
+          "price": 7000
+        },
+        {
+          "label": "كبير",
+          "price": 10000
+        }
+      ]
+    },
+    {
+      "id": "pizza-04",
+      "category": "pizza",
+      "group": "الايطالي",
       "name": "بيتزا بيبروني",
       "image": "assets/images/aaaaa.png",
       "price": 15000
