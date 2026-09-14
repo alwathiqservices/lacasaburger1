@@ -33,6 +33,10 @@
       "name": "صاج"
     },
     {
+      "id": "crispy",
+      "name": "مقرمشات دجاج"
+    },
+    {
       "id": "western",
       "name": "غربي"
     },
@@ -367,61 +371,6 @@
       ]
     },
     {
-      "id": "burger-05",
-      "category": "burger",
-      "group": "مقرمشات دجاج",
-      "name": "مقرمشات دجاج",
-      "image": "assets/images/q.png",
-      "customizable": true,
-      "optionsTitle": "النوع",
-      "options": [
-        {
-          "label": "زنكر ساندويش",
-          "price": 4000
-        },
-        {
-          "label": "زنكر وجبة",
-          "price": 5500
-        },
-        {
-          "label": "زنكر سوبريم ساندويش",
-          "price": 4500
-        },
-        {
-          "label": "زنكر سوبريم وجبة",
-          "price": 6000
-        },
-        {
-          "label": "فلر ساندويش",
-          "price": 4000
-        },
-        {
-          "label": "فلر وجبة",
-          "price": 5500
-        },
-        {
-          "label": "بوخارست ساندويش",
-          "price": 5000
-        },
-        {
-          "label": "بوخارست وجبة",
-          "price": 6500
-        },
-        {
-          "label": "مطافي ساندويش",
-          "price": 4000
-        },
-        {
-          "label": "مطافي وجبة",
-          "price": 5500
-        },
-        {
-          "label": "طبق كوردن بلو",
-          "price": 8000
-        }
-      ]
-    },
-    {
       "id": "saj-01",
       "category": "saj",
       "group": "صاج",
@@ -475,6 +424,101 @@
         {
           "label": "ايطالي دجاج",
           "price": 6500
+        }
+      ]
+    },
+    {
+      "id": "crispy-01",
+      "category": "crispy",
+      "group": "مقرمشات دجاج",
+      "name": "زنكر",
+      "image": "assets/images/z1.png",
+      "customizable": true,
+      "optionsTitle": "النوع",
+      "options": [
+        {
+          "label": "ساندويش",
+          "price": 4000
+        },
+        {
+          "label": "وجبة",
+          "price": 5500
+        }
+      ]
+    },
+    {
+      "id": "crispy-02",
+      "category": "crispy",
+      "group": "مقرمشات دجاج",
+      "name": "زنكر سوبريم",
+      "image": "assets/images/z1.png",
+      "customizable": true,
+      "optionsTitle": "النوع",
+      "options": [
+        {
+          "label": "ساندويش",
+          "price": 4500
+        },
+        {
+          "label": "وجبة",
+          "price": 6000
+        }
+      ]
+    },
+    {
+      "id": "crispy-03",
+      "category": "crispy",
+      "group": "مقرمشات دجاج",
+      "name": "فلر",
+      "image": "assets/images/z3.png",
+      "customizable": true,
+      "optionsTitle": "النوع",
+      "options": [
+        {
+          "label": "ساندويش",
+          "price": 4000
+        },
+        {
+          "label": "وجبة",
+          "price": 5500
+        }
+      ]
+    },
+    {
+      "id": "crispy-04",
+      "category": "crispy",
+      "group": "مقرمشات دجاج",
+      "name": "بوخارست",
+      "image": "assets/images/z4.png",
+      "customizable": true,
+      "optionsTitle": "النوع",
+      "options": [
+        {
+          "label": "ساندويش",
+          "price": 5000
+        },
+        {
+          "label": "وجبة",
+          "price": 6500
+        }
+      ]
+    },
+    {
+      "id": "crispy-05",
+      "category": "crispy",
+      "group": "مقرمشات دجاج",
+      "name": "مطافي",
+      "image": "assets/images/z5.png",
+      "customizable": true,
+      "optionsTitle": "النوع",
+      "options": [
+        {
+          "label": "ساندويش",
+          "price": 4000
+        },
+        {
+          "label": "وجبة",
+          "price": 5500
         }
       ]
     },
