@@ -714,6 +714,14 @@
       "price": 6000
     },
     {
+      "id": "appetizers-01",
+      "category": "appetizers",
+      "group": "مقبلات حاره",
+      "name": "ناجوز",
+      "image": "assets/images/nagoz.png",
+      "price": 6000
+    },
+    {
       "id": "appetizers-02",
       "category": "appetizers",
       "group": "مقبلات حاره",
@@ -813,7 +821,7 @@
       "group": "الفنكر",
       "name": "فرايز لحم",
       "image": "assets/images/1.png",
-      "price": 3000
+      "price": 3500
     },
     {
       "id": "fries-06",
